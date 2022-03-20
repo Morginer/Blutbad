@@ -12,17 +12,11 @@ namespace Blutbad
 {
     public partial class Blutbad : Form
     {
-        
-        
-
         public Blutbad()
         {
             InitializeComponent();
             UpdateButtons(Engine.World.player.CurrentLocation);
-
         }
-
-        
 
         private void btnNorth_Click(object sender, EventArgs e)
         {
@@ -43,7 +37,6 @@ namespace Blutbad
             Engine.World.player.CurrentLocation = Engine.World.player.CurrentLocation.LocationToWest;
             UpdateButtons(Engine.World.player.CurrentLocation);
         }
-
         private void btnEast_Click(object sender, EventArgs e)
         {
             if (Engine.World.player.CurrentLocation.LocationToEast == null)
@@ -98,8 +91,6 @@ namespace Blutbad
             {
                 btnEast.Visible = true;
             }
-        }
-
-        
+        }  
     }
 }
