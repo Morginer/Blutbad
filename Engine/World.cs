@@ -20,6 +20,7 @@ namespace Engine
 
         static World()
         {
+            player = new Player(1, 10, 10, 0, 0, 1);
             DevelopLocations();
             DevelopMonsters();
         }
@@ -44,7 +45,9 @@ namespace Engine
             locations.Add(home);
             locations.Add(village);
             locations.Add(forest);
-            locations.Add(ruins);             
+            locations.Add(ruins);
+
+            player.CurrentLocation = home;
         }
 
         public static void DevelopMonsters()
