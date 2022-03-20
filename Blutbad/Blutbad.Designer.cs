@@ -43,6 +43,7 @@
             this.btnNorth.Text = "North";
             this.btnNorth.UseVisualStyleBackColor = true;
             this.btnNorth.Click += new System.EventHandler(this.btnNorth_Click);
+
             // 
             // btnEast
             // 
@@ -74,7 +75,7 @@
             this.btnSouth.UseVisualStyleBackColor = true;
             this.btnSouth.Click += new System.EventHandler(this.btnSouth_Click);
             // 
-            // Form1
+            // Blutbad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -83,7 +84,7 @@
             this.Controls.Add(this.btnWest);
             this.Controls.Add(this.btnEast);
             this.Controls.Add(this.btnNorth);
-            this.Name = "Form1";
+            this.Name = "Blutbad";
             this.Text = "Form1";
             this.ResumeLayout(false);
 

@@ -13,6 +13,7 @@ namespace Engine
         public int Gold { get; set; }
         public int Level { get; set; }
         public Locations CurrentLocation { get; set; }
+        
 
         public Player(int ID, int MaximumHealthPoints, int CurrentHealthPoints, int Exp,
             int Gold, int Level)
