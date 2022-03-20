@@ -8,15 +8,20 @@ namespace Engine
     {
         public static Player player { get; } 
         public static List<Locations> locations = new List<Locations>();
+        public static List<Monsters> monsters = new List<Monsters>();
+
         public const int LOCATIONS_ID_HOME = 1;
         public const int LOCATIONS_ID_VILLAGE = 2;
         public const int LOCATIONS_ID_FOREST = 3;
         public const int LOCATIONS_ID_RUINS = 4;
 
+        public const int MONSTERS_ID_WEREWOLF = 1;
+        public const int MONSTERS_ID_YOUNG_VAMPIRE = 2;
+
         static World()
         {
-            player = new Player(1, 10, 10, 0, 0, 1);
-            DevelopLocations();        
+            DevelopLocations();
+            DevelopMonsters();
         }
 
         public static void DevelopLocations()
@@ -39,9 +44,16 @@ namespace Engine
             locations.Add(home);
             locations.Add(village);
             locations.Add(forest);
-            locations.Add(ruins);
+            locations.Add(ruins);             
+        }
 
-            player.CurrentLocation = home;
-        }       
+        public static void DevelopMonsters()
+        {
+            Monsters werewolf = new Monsters(MONSTERS_ID_WEREWOLF, "Werewolf", 10, 10, 2, 5, 10);
+            Monsters youngVampire = new Monsters(MONSTERS_ID_YOUNG_VAMPIRE, "Young Vampire", 15, 15, 4, 8, 15);
+
+            monsters.Add(werewolf);
+            monsters.Add(youngVampire);
+        }
     }
 }

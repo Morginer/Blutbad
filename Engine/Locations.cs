@@ -13,7 +13,8 @@ namespace Engine
         public Locations LocationToWest { get; set; }
         public Locations LocationToEast { get; set; }
         public Locations LocationToSouth { get; set; }
-        
+        public Monsters MonsterInLocation { get; set; }
+
         public Locations(int ID,string Name, string Description)
         {
             this.ID = ID;
