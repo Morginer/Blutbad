@@ -12,6 +12,7 @@ namespace Engine
         {
             /* Initialize locations */
             locations = new Locations();
+            locations.Initialize();
             /* Initialize plaeyr */
             player = new Player(1, 10, 10, 0, 0, 1);
             player.CurrentLocation = locations.GetLocation(Locations.LocationsTypes.HOME);
