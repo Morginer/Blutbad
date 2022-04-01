@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Engine
 {
-    public class World
+    public static class World
     {
         public static Player player { get; } 
         public static Locations locations { get; }
