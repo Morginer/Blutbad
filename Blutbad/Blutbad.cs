@@ -57,7 +57,7 @@ namespace Blutbad
             UpdateButtons(Engine.World.player.CurrentLocation);
         }
 
-        private void UpdateButtons(Engine.Locations currentLocation)
+        private void UpdateButtons(Engine.Location currentLocation)
         {
             if (currentLocation.LocationToNorth == null)
             {

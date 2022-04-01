@@ -6,6 +6,9 @@ namespace Engine
 {
     class ForestLocation: Location
     {
-        public ForestLocation(): base("Forest", "Pine forest. You don't see any animals here.") { }
+        public ForestLocation(): base("Forest", "Pine forest. You don't see any animals here.") 
+        {
+            this.Monster = new Werewolf();
+        }
     }
 }
